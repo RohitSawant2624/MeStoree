@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:focusable="true"
+    android:background="?attr/selectableItemBackground"
+    android:padding="20dp">
+    
+    <ImageView
+        android:id="@+id/iv_orderImage"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:src="@drawable/img_workplace_table"/>
+    <LinearLayout
+        android:layout_marginStart="10dp"
+        android:layout_weight="1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="wrap_content"
+
+            android:id="@+id/txt_order_status"
+            android:layout_height="wrap_content"
+            android:text="Ordered on May,23,2023"
+            android:textColor="#2B3D4C"
+            android:textStyle="bold"/>
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/txt_order_Name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Workplace Table"
+            android:textColor="#2B3D4C"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/ic_down_arrorw"
+        android:rotation="270"/>
+
+
+</LinearLayout>
